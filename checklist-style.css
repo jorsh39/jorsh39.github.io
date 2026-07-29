@@ -1,0 +1,145 @@
+:root {
+    color-scheme: light dark;
+    --bg-color: light-dark(#ffffff, #121212);
+    --text-color: light-dark(#333333, #f5f5f5);
+    --accent-color: light-dark(#0066cc, #4da6ff);
+}
+
+body {
+    margin: 0;
+    background: #121212;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 5em;
+    font-family: "Grobold", sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: "Grobold", sans-serif;
+}
+
+.container {background-color: #444;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: none;
+
+    border-bottom: 4px solid rgba(255,255,255,0.15);
+}
+
+.ocean {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 0;
+
+    background: linear-gradient(
+        to bottom,
+        #7dd3fc 0%,
+        #38bdf8 15%,
+        #0ea5e9 35%,
+        #0369a1 65%,
+        #08294f 100%
+    );
+    margin-top: -4px;
+}
+
+.fish-image {
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+    
+}
+
+.s-image {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    transform: translateY(-4px);
+}
+
+.container2 {background-color: #444;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    max-height: fit-content;
+    border-radius: 10px;
+}
+
+.fish-list {
+    height: calc(100vh-200px);      /* Height of the container */
+    column-count: 2;    /* Number of columns */
+    column-gap: 40px; 
+    column-fill: balance;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 75px;
+}
+
+label {
+    font-family: "Grobold", sans-serif;
+    font-size: 1.5rem;
+}
+
+.fish-item {
+    margin-bottom: 20px;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+}
+#fish-item-94 .fish-image {
+  width: 60px;
+}
+#fish-item-196 .fish-image {
+  width: 60px;
+}
+#fish-item-187 .fish-image {
+  width: 100px;
+}
+
+.left-sidebar {
+    position: absolute;
+    left: 35px;
+    top: 300px;
+    width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right-sidebar {
+    position: absolute;
+    right: 125px;
+    top: 300px;
+    width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.side-fish {
+    width: 275px;
+    height: auto;
+    display: block;
+}
+
+.left-sidebar .side-fish:nth-child(even) {
+    margin-left: 30px;
+}
+
+.right-sidebar .side-fish:nth-child(even) {
+  position: relative;
+  right: 30px;
+}
