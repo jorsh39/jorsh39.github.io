@@ -3,18 +3,18 @@ const additionalFish = [
 ];
 
 const imageFileOverrides = {
-  "Indo-Pacific Blue Marlin": "Indo Pacific Blue Marlin.png",
-  "Mahi-mahi": "Mahi Mahi.png",
-  "Pink Anemonefish": "Pink Anemone.png",
-  "Sockeye Salmon (F)": "Female Sockeye Salmon.png",
-  "Red Sea Bream": "Red Seabream.png",
-  "N. Pacific Giant Octopus": "N Pacific Giant Octopus.png",
-  "Black Sea Bream": "Black Seabream.png",
-  "Red-bellied Fusilier": "Red Bellied Fusilier.png",
-  "King of Herrings": "King Of Herrings.png",
-  "Red Emperor (Adult)": "Red Emperor Adult.png",
-  "Red Emperor (Young)": "Red Emperor Child.png",
-  "Royal Knife Fish": "Royal Knifefish.png"
+  "Indo-Pacific Blue Marlin": "Indo Pacific Blue Marlin.webp",
+  "Mahi-mahi": "Mahi Mahi.webp",
+  "Pink Anemonefish": "Pink Anemone.webp",
+  "Sockeye Salmon (F)": "Female Sockeye Salmon.webp",
+  "Red Sea Bream": "Red Seabream.webp",
+  "N. Pacific Giant Octopus": "N Pacific Giant Octopus.webp",
+  "Black Sea Bream": "Black Seabream.webp",
+  "Red-bellied Fusilier": "Red Bellied Fusilier.webp",
+  "King of Herrings": "King Of Herrings.webp",
+  "Red Emperor (Adult)": "Red Emperor Adult.webp",
+  "Red Emperor (Young)": "Red Emperor Child.webp",
+  "Royal Knife Fish": "Royal Knifefish.webp"
 };
 
 const fishList = document.querySelector(".fish-list");
@@ -35,7 +35,7 @@ additionalFish.forEach((fishName, index) => {
   item.dataset.fishName = fishName;
 
   image.className = "fish-image";
-  image.src = `images/${imageFileOverrides[fishName] || `${fishName}.png`}`;
+  image.src = `images/${imageFileOverrides[fishName] || `${fishName}.webp`}`;
   image.alt = fishName;
 
   caught.type = "checkbox";
@@ -47,7 +47,7 @@ additionalFish.forEach((fishName, index) => {
   rank.id = `fishs${number}`;
   rankLabel.htmlFor = rank.id;
   rankImage.className = "s-image";
-  rankImage.src = "images/*S Rank.png";
+  rankImage.src = "images/*S Rank.webp";
   rankImage.alt = "S rank?";
   rankLabel.append(rankImage);
 

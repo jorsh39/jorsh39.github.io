@@ -1,14 +1,14 @@
 const fishImages = [
-    "images/Alligator_Gar.png",
-    "images/King_of_Herrings.png",
-"images/Alligator_Gar.png",
-    "images/King_of_Herrings.png",
-"images/Alligator_Gar.png",
-    "images/King_of_Herrings.png",
-"images/Alligator_Gar.png",
-    "images/King_of_Herrings.png",
-"images/Alligator_Gar.png",
-    "images/King_of_Herrings.png",
+    "images/Alligator Gar.webp",
+    "images/King Of Herrings.webp",
+"images/Alligator Gar.webp",
+    "images/King Of Herrings.webp",
+"images/Alligator Gar.webp",
+    "images/King Of Herrings.webp",
+"images/Alligator Gar.webp",
+    "images/King Of Herrings.webp",
+"images/Alligator Gar.webp",
+    "images/King Of Herrings.webp",
 
 ];
 
@@ -38,4 +38,3 @@ for (let i = 0; i < 5; i++) {
     rightImg.style.transform = "scaleX(1)";
     rightSidebar.appendChild(rightImg);
 }
-
